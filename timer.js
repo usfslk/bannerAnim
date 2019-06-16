@@ -43,13 +43,4 @@ function main() {
    }, 1000);
 }
 
-function stop() {
-   window.endDate = new Date("Jul 6, 2015 00:00:00").getTime();
-   var timer = document.getElementById('timer');
-   var timerOverlay = document.getElementById('timer-overlay');
-   while (timer.firstChild) timer.removeChild(timer.firstChild);
-   while (timerOverlay.firstChild) timerOverlay.removeChild(timerOverlay.firstChild);
-   reset();
-}
-
 main();
