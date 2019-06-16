@@ -1,0 +1,80 @@
+html,
+body {
+   font-family: 'Rubik', sans-serif;
+
+}
+
+.master {
+   color: #fff;
+   background-color: #f6f6f7;
+   height: 100vh;
+   width: 100%;
+   padding-top: 5%;
+   display: flex;
+   justify-content: center;
+}
+
+.logo {
+   width: 298px;
+   height: 91px;
+   margin-top: 3%;
+   margin-bottom: 1%
+}
+
+.timestamp {
+   font-size: 45px;
+   font-weight: 700;
+   padding-bottom: 1%;
+}
+
+.time-label {
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.coming-soon {
+   font-weight: 700;
+}
+
+.banner {
+   position: relative;
+   background-color: #fff;
+   color: #cc0000;
+   overflow: hidden;
+   width: 936px;
+   height: 288px;
+   text-align: center;
+}
+
+.banner-overlay {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #cc0000;
+   color: #fff;
+   overflow: hidden;
+   width: 100%;
+   clip-path: polygon(var(--clip1) var(--clip2),
+         var(--clip3) var(--clip4),
+         var(--clip5) var(--clip6),
+         var(--clip7) var(--clip8));
+}
+
+
+
+.center {
+   text-align: center;
+   margin: 0 auto;
+   width: 100%;
+   align-self: center;
+   margin-bottom: 5%;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
