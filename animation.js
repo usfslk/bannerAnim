@@ -1,3 +1,6 @@
+// Youssef Selkani
+// 2019
+
 let now = new Date().getTime();
 let root = document.documentElement;
 let loop = 10; var i;

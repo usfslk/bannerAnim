@@ -1,3 +1,6 @@
+// Youssef Selkani
+// 2019
+
 function main() {
    window.endDate = new Date("Jun 30, 2019 00:00:00").getTime();
    var timer = setInterval(function () {
