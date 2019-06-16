@@ -6,10 +6,9 @@ body {
 
 .master {
    color: #fff;
-   background-color: #f6f6f7;
-   height: 100vh;
+   background-color: #f1f2f3;
    width: 100%;
-   padding-top: 5%;
+   height: 100vh;
    display: flex;
    justify-content: center;
 }
@@ -44,6 +43,7 @@ body {
    width: 936px;
    height: 288px;
    text-align: center;
+   margin: 5%;
 }
 
 .banner-overlay {

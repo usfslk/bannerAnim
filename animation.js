@@ -1,7 +1,7 @@
 let now = new Date().getTime();
-var endDate = new Date("Jul 6, 2019 00:00:00").getTime();
 let root = document.documentElement;
-let loop = 14; var i;
+let loop = 10; var i;
+var endDate = new Date("Jun 30, 2019 00:00:00").getTime();
 
  let t = endDate - now;
    if (t >= 0) {

@@ -24,10 +24,10 @@
          <span id="timer-days" />
           </div> -->
 
-         <div class="banner">
+          <div class="banner">
             <img class="logo" src='assets/redLogo.png' />
             <div class="flex container timestamp">
-               <div class="row">
+               <div class="row" id='timer'>
                   <div class="col-xs-3" id="days"></div>
                   <div class="col-xs-1"></div>
                   <div class="col-xs-2" id="hours"></div>
@@ -38,12 +38,10 @@
                </div>
             </div>
             <p class="coming-soon" id="status"></p>
-
-
             <div class="banner-overlay">
                <img class="logo" src='assets/whiteLogo.png' />
                <div class="flex container timestamp">
-                  <div class="row">
+                  <div class="row" id='timer-overlay'>
                      <div class="col-xs-3" id="days-overlay"></div>
                      <div class="col-xs-1"></div>
                      <div class="col-xs-2" id="hours-overlay"></div>
@@ -55,10 +53,9 @@
                </div>
                <p class="coming-soon" id="status-overlay"></p>
             </div>
-
          </div>
-
       </div>
+
       <script src="animation.js"></script>
       <script src="timer.js"></script>
    </body>
