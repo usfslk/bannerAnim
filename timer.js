@@ -2,7 +2,7 @@
 // 2019
 
 function main() {
-   window.endDate = new Date("Jun 30, 2019 00:00:00").getTime();
+   window.endDate = new Date("Jan 1, 2020 00:00:00").getTime();
    var timer = setInterval(function () {
       let now = new Date().getTime();
       let t = endDate - now;
@@ -38,7 +38,10 @@ function main() {
          }
 
       } else {
-         document.getElementsByClassName("status-overlay").innerHTML = "The countdown is over.";
+         OldStatus = document.getElementsByClassName("status");
+         for (i = 0; i < OldStatus.length; i++) {
+            OldStatus[i].innerHTML ="The countdown is over.";
+         }
       }
    }, 1000);
 }
