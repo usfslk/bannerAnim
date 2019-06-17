@@ -1,20 +1,16 @@
 // Youssef Selkani
 // 2019
 
-let now = new Date().getTime();
-let root = document.documentElement;
-let loop = 10; var i;
 var endDate = new Date("Jun 30, 2019 00:00:00").getTime();
-
- let t = endDate - now;
-   if (t >= 0) {
-      console.log(t);
-      bottomLoop();
-   }
+let root = document.documentElement;
+let now = new Date().getTime();
+let loop = 10; var i;
+let t = endDate - now;
+if (t >= 0) {
+   bottomLoop();
+}
 
 function bottomLoop() {
-   console.log('bottomLoop');
-   // White BG
    root.style.setProperty('--clip1', 0);
    root.style.setProperty('--clip2', '100%');
    root.style.setProperty('--clip3', '100%');
@@ -23,39 +19,28 @@ function bottomLoop() {
    root.style.setProperty('--clip6', '100%');
    root.style.setProperty('--clip7', 0);
    root.style.setProperty('--clip8', '100%');
-   var clip = 100;
-   var intervalId = setInterval(function () {
-      if (clip < 0) {
-         console.log('done!');
-         leftLoop();
-         clearInterval(intervalId);
-         return;
+   nAnimate.start(1000, function (rate) {
+      let position = -100 + (rate * 100);
+      root.style.setProperty('--clip2', Math.abs(position) + "%");
+      root.style.setProperty('--clip4', Math.abs(position) + "%");
+      if (Math.abs(position) === 0) {
+          leftLoop();
       }
-      root.style.setProperty('--clip2', clip + "%");
-      root.style.setProperty('--clip4', clip + "%");
-      // console.log('B/' + clip);
-      clip--;
-   }, loop + 1);
+   }, "easeInOutQuint");
 }
 
 function leftLoop() {
-   console.log('leftLoop');
-   var clip = 0;
-   var intervalId = setInterval(function () {
-      if (clip > 100) {
+   nAnimate.start(1000, function (rate) {
+      let position = 0 + (rate * 100);
+      root.style.setProperty('--clip1', Math.abs(position) + "%");
+      root.style.setProperty('--clip7', Math.abs(position) + "%");
+      if (position === 100) {
          topLoop();
-         clearInterval(intervalId);
-         return;
       }
-      root.style.setProperty('--clip1', clip + "%");
-      root.style.setProperty('--clip7', clip + "%");
-      // console.log('L/' + clip);
-      clip++;
-   }, loop);
+   }, "easeInOutQuint");
 }
 
 function topLoop() {
-   console.log('topLoop');
    root.style.setProperty('--clip1', 0);
    root.style.setProperty('--clip2', 0);
    root.style.setProperty('--clip3', '100%');
@@ -64,32 +49,23 @@ function topLoop() {
    root.style.setProperty('--clip6', 0);
    root.style.setProperty('--clip7', 0);
    root.style.setProperty('--clip8', 0);
-   var clip = 0;
-   var intervalId = setInterval(function () {
-      if (clip > 100) {
+   nAnimate.start(1000, function (rate) {
+      let position = 0 + (rate * 100);
+      root.style.setProperty('--clip8', Math.abs(position) + "%");
+      root.style.setProperty('--clip6', Math.abs(position) + "%");
+      if (position === 100) {
          rightLoop();
-         clearInterval(intervalId);
-         return;
       }
-      root.style.setProperty('--clip8', clip + "%");
-      root.style.setProperty('--clip6', clip + "%");
-      // console.log('T/' + clip);
-      clip++;
-   }, loop);
+   }, "easeInOutQuint");
 }
 
 function rightLoop() {
-   console.log('rightLoop');
-   var clip = 100;
-   var intervalId = setInterval(function () {
-      if (clip < 0) {
-         bottomLoop();
-         clearInterval(intervalId);
-         return;
+   nAnimate.start(1000, function (rate) {
+      let position = -100 + (rate * 100);
+      root.style.setProperty('--clip3', Math.abs(position) + "%");
+      root.style.setProperty('--clip5', Math.abs(position) + "%");
+      if (Math.abs(position) === 0) {
+          bottomLoop();
       }
-      root.style.setProperty('--clip3', clip + "%");
-      root.style.setProperty('--clip5', clip + "%");
-      //console.log('R/' + clip);
-      clip--;
-   }, loop);
+   }, "easeInOutQuint");
 }

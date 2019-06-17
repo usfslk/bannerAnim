@@ -13,28 +13,28 @@ function main() {
          let secs = Math.floor((t % (1000 * 60)) / 1000);
 
          document.getElementById("days").innerHTML =
-            days + ": <br/><h6 class='time-label'>Days </h6>";
+            days + ":<br/><h6 class='time-label'>Days</h6>";
 
          document.getElementById("hours").innerHTML =
-            ("0" + hours).slice(-2) + " : <br/><h6 class='time-label'>Hours </h6>";
+            ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
 
          document.getElementById("minutes").innerHTML =
-            ("0" + mins).slice(-2) + " : <br/><h6 class='time-label'> Minutes </h6>";
+            ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
 
          document.getElementById("seconds").innerHTML =
-            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'> Seconds </h6>";
+            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds </h6>";
 
          document.getElementById("days-overlay").innerHTML =
-            days + ": <br/><h6 class='time-label'>Days</h6>";
+            days + ":<br/><h6 class='time-label'>Days</h6>";
 
          document.getElementById("hours-overlay").innerHTML =
-            ("0" + hours).slice(-2) + " : <br/><h6 class='time-label'>Hours </h6>";
+            ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
 
          document.getElementById("minutes-overlay").innerHTML =
-            ("0" + mins).slice(-2) + " : <br/><h6 class='time-label'> Minutes </h6>";
+            ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
 
          document.getElementById("seconds-overlay").innerHTML =
-            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'> Seconds</h6>";
+            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds</h6>";
 
          document.getElementById("status").innerHTML = "coming soon";
          document.getElementById("status-overlay").innerHTML = "coming soon";
