@@ -1,16 +1,12 @@
 // Youssef Selkani
 // 2019
 
-var endDate = new Date("Jan 1, 9102 00:00:00").getTime();
+let endDate = new Date("Jun 17, 2019 20:47:00").getTime();
 let banner = document.documentElement;
 let now = new Date().getTime();
 let loop = 10; var i;
 let duration = 1000;
 let easing = 'easeInOutQuint';
-let t = endDate - now;
-if (t >= 0) {
-   toTop();
-}
 
 function toTop() {
    banner.style.setProperty('--clip1', 0);
@@ -26,7 +22,11 @@ function toTop() {
       banner.style.setProperty('--clip2', Math.abs(position) + "%");
       banner.style.setProperty('--clip4', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
-          toRight();
+         let now = new Date().getTime();
+         let t = endDate - now;
+         if (t >= 0) {
+            toRight();
+         }
       }
    }, easing);
 }
@@ -37,7 +37,11 @@ function toRight() {
       banner.style.setProperty('--clip1', Math.abs(position) + "%");
       banner.style.setProperty('--clip7', Math.abs(position) + "%");
       if (position === 100) {
-         toBottom();
+         let now = new Date().getTime();
+         let t = endDate - now;
+         if (t >= 0) {
+            toBottom();
+         }
       }
    }, easing);
 }
@@ -56,7 +60,11 @@ function toBottom() {
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       if (position === 100) {
-         toLeft();
+         let now = new Date().getTime();
+         let t = endDate - now;
+         if (t >= 0) {
+            toLeft();
+         }
       }
    }, easing);
 }
@@ -67,7 +75,13 @@ function toLeft() {
       banner.style.setProperty('--clip3', Math.abs(position) + "%");
       banner.style.setProperty('--clip5', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
-          toTop();
+         let now = new Date().getTime();
+         let t = endDate - now;
+         if (t >= 0) {
+            toTop();
+         }
       }
    }, easing);
 }
+
+toTop();

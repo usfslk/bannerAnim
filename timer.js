@@ -2,7 +2,7 @@
 // 2019
 
 function main() {
-   window.endDate = new Date("Jan 1, 2020 00:00:00").getTime();
+   let endDate = new Date("Jun 17, 2019 20:47:00").getTime();
    var timer = setInterval(function () {
       let now = new Date().getTime();
       let t = endDate - now;
