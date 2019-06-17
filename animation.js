@@ -1,12 +1,7 @@
 // Youssef Selkani
 // 2019
 
-let endDate = new Date("Jun 17, 2020 20:47:00").getTime();
 let banner = document.documentElement;
-let now = new Date().getTime();
-let loop = 10; var i;
-let duration = 1000;
-let easing = 'easeInOutQuint';
 
 function toTop() {
    banner.style.setProperty('--clip1', 0);
