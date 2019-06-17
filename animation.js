@@ -1,7 +1,7 @@
 // Youssef Selkani
 // 2019
 
-let endDate = new Date("Jun 17, 2019 20:47:00").getTime();
+let endDate = new Date("Jun 17, 2020 20:47:00").getTime();
 let banner = document.documentElement;
 let now = new Date().getTime();
 let loop = 10; var i;
