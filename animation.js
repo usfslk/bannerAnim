@@ -5,7 +5,8 @@ var endDate = new Date("Jun 30, 2019 00:00:00").getTime();
 let root = document.documentElement;
 let now = new Date().getTime();
 let loop = 10; var i;
-let duration = 8000;
+let duration = 3000;
+let easing = 'easeInOutSine';
 let t = endDate - now;
 if (t >= 0) {
    bottomLoop();
@@ -27,7 +28,7 @@ function bottomLoop() {
       if (Math.abs(position) === 0) {
           leftLoop();
       }
-   }, "easeOutSine");
+   }, easing);
 }
 
 function leftLoop() {
@@ -38,7 +39,7 @@ function leftLoop() {
       if (position === 100) {
          topLoop();
       }
-   }, "easeOutSine");
+   }, easing);
 }
 
 function topLoop() {
@@ -57,7 +58,7 @@ function topLoop() {
       if (position === 100) {
          rightLoop();
       }
-   }, "easeOutSine");
+   }, easing);
 }
 
 function rightLoop() {
@@ -68,5 +69,5 @@ function rightLoop() {
       if (Math.abs(position) === 0) {
           bottomLoop();
       }
-   }, "easeOutSine");
+   }, easing);
 }

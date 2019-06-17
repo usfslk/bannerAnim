@@ -25,23 +25,28 @@
    <body>
 
       <div class="master">
-         <div class="banner">
-            <img class="logo" src='assets/redLogo.png' />
-            <div class="flex container timestamp">
-               <div class="row" id='timer'>
-                  <div class="col-xs-3" id="days"></div>
-                  <div class="col-xs-1"></div>
-                  <div class="col-xs-2" id="hours"></div>
-                  <div class="col-xs-1"></div>
-                  <div class="col-xs-2" id="minutes"></div>
-                  <div class="col-xs-1"></div>
-                  <div class="col-xs-2" id="seconds"></div>
+
+         <div class="banner flex">
+            <div>
+               <img class="logo" src='assets/redLogo.png' />
+               <div class="container flex timestamp">
+                  <div class="row" id='timer'>
+                     <div class="col-xs-3" id="days"></div>
+                     <div class="col-xs-1"></div>
+                     <div class="col-xs-2" id="hours"></div>
+                     <div class="col-xs-1"></div>
+                     <div class="col-xs-2" id="minutes"></div>
+                     <div class="col-xs-1"></div>
+                     <div class="col-xs-2" id="seconds"></div>
+                  </div>
                </div>
+               <p class="coming-soon" id="status"></p>
             </div>
-            <p class="coming-soon" id="status"></p>
-            <div class="banner-overlay">
-               <img class="logo" src='assets/whiteLogo.png' />
-               <div class="flex container timestamp">
+
+            <div class="banner-overlay flex">
+              <div>
+                  <img class="logo" src='assets/whiteLogo.png' />
+               <div class="container flex timestamp">
                   <div class="row" id='timer-overlay'>
                      <div class="col-xs-3" id="days-overlay"></div>
                      <div class="col-xs-1"></div>
@@ -54,32 +59,13 @@
                </div>
                <p class="coming-soon" id="status-overlay"></p>
             </div>
+              </div>
          </div>
+
       </div>
-
-      <!-- <div id="box"></div> -->
-
-
-      <!-- <div class="master flex">
-         <div class="banner">
-           <img class="logo" src='https://image.flaticon.com/icons/svg/148/148711.svg' />
-           <h2 class="coming-soon" id="status">Hello</h2>
-           <p>
-           Lorem ipsum dolor sit amaet
-           </p>
-           <div class="banner-overlay">
-           <img class="logo" src='https://image.flaticon.com/icons/svg/149/149092.svg' />
-           <h2 class="coming-soon" id="status-overlay">Hello</h2>
-           <p>
-           Lorem ipsum dolor sit amaet
-           </p>
-           </div>
-         </div>
-       </div> -->
 
       <script src="animation.js"></script>
       <script src="timer.js"></script>
-      <!-- <script src="easing.js"></script> -->
    </body>
 
 </html>

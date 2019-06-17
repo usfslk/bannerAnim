@@ -31,14 +31,11 @@ body {
 .logo {
    width: 298px;
    height: 91px;
-   margin-top: 3%;
-   margin-bottom: 1%
 }
 
 .timestamp {
    font-size: 45px;
    font-weight: 700;
-   padding-bottom: 1%;
 }
 
 .time-label {
@@ -48,48 +45,33 @@ body {
 
 .coming-soon {
    font-weight: 700;
+   margin-top: 1%;
 }
 
 .banner {
-   position: relative;
    background-color: #fff;
    color: #cc0000;
+   text-align: center;
+   position: relative;
    overflow: hidden;
    width: 936px;
    height: 288px;
-   text-align: center;
    margin: 5%;
 }
 
 .banner-overlay {
+   background-color: #cc0000;
+   color: #fff;
    position: absolute;
    top: 0;
    right: 0;
    bottom: 0;
    left: 0;
-   background-color: #cc0000;
-   color: #fff;
    overflow: hidden;
    width: 100%;
-   clip-path: polygon(var(--clip1) var(--clip2),
+   clip-path: polygon(
+         var(--clip1) var(--clip2),
          var(--clip3) var(--clip4),
          var(--clip5) var(--clip6),
          var(--clip7) var(--clip8));
 }
-
-.center {
-   text-align: center;
-   margin: 0 auto;
-   width: 100%;
-   align-self: center;
-   margin-bottom: 5%;
-}
-
-#box {
-   width: 100px;
-   height: 100px;
-   background: blue;
-   box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-   position: absolute;
-   left: 0;
- }
