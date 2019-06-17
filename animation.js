@@ -19,25 +19,25 @@ function bottomLoop() {
    root.style.setProperty('--clip6', '100%');
    root.style.setProperty('--clip7', 0);
    root.style.setProperty('--clip8', '100%');
-   nAnimate.start(1000, function (rate) {
+   nAnimate.start(2000, function (rate) {
       let position = -100 + (rate * 100);
       root.style.setProperty('--clip2', Math.abs(position) + "%");
       root.style.setProperty('--clip4', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
           leftLoop();
       }
-   }, "easeInOutQuint");
+   }, "easeOutExpo");
 }
 
 function leftLoop() {
-   nAnimate.start(1000, function (rate) {
+   nAnimate.start(2000, function (rate) {
       let position = 0 + (rate * 100);
       root.style.setProperty('--clip1', Math.abs(position) + "%");
       root.style.setProperty('--clip7', Math.abs(position) + "%");
       if (position === 100) {
          topLoop();
       }
-   }, "easeInOutQuint");
+   }, "easeOutExpo");
 }
 
 function topLoop() {
@@ -49,23 +49,23 @@ function topLoop() {
    root.style.setProperty('--clip6', 0);
    root.style.setProperty('--clip7', 0);
    root.style.setProperty('--clip8', 0);
-   nAnimate.start(1000, function (rate) {
+   nAnimate.start(2000, function (rate) {
       let position = 0 + (rate * 100);
       root.style.setProperty('--clip8', Math.abs(position) + "%");
       root.style.setProperty('--clip6', Math.abs(position) + "%");
       if (position === 100) {
          rightLoop();
       }
-   }, "easeInOutQuint");
+   }, "easeOutExpo");
 }
 
 function rightLoop() {
-   nAnimate.start(1000, function (rate) {
+   nAnimate.start(2000, function (rate) {
       let position = -100 + (rate * 100);
       root.style.setProperty('--clip3', Math.abs(position) + "%");
       root.style.setProperty('--clip5', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
           bottomLoop();
       }
-   }, "easeInOutQuint");
+   }, "easeOutExpo");
 }
