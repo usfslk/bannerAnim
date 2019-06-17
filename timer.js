@@ -12,36 +12,33 @@ function main() {
          let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
          let secs = Math.floor((t % (1000 * 60)) / 1000);
 
-         document.getElementById("days").innerHTML =
-            days + ":<br/><h6 class='time-label'>Days</h6>";
+         oldDays = document.getElementsByClassName("days");
+         for (i = 0; i < oldDays.length; i++) {
+            oldDays[i].innerHTML = days + ":<br/><h6 class='time-label'>Days</h6>";
+         }
 
-         document.getElementById("hours").innerHTML =
-            ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
+         oldHours = document.getElementsByClassName("hours");
+         for (i = 0; i < oldHours.length; i++) {
+            oldHours[i].innerHTML = ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
+         }
 
-         document.getElementById("minutes").innerHTML =
-            ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
+         oldMinutes = document.getElementsByClassName("minutes");
+         for (i = 0; i < oldMinutes.length; i++) {
+            oldMinutes[i].innerHTML = ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
+         }
 
-         document.getElementById("seconds").innerHTML =
-            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds </h6>";
+         oldSeconds = document.getElementsByClassName("seconds");
+         for (i = 0; i < oldSeconds.length; i++) {
+            oldSeconds[i].innerHTML = ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds </h6>";
+         }
 
-         document.getElementById("days-overlay").innerHTML =
-            days + ":<br/><h6 class='time-label'>Days</h6>";
-
-         document.getElementById("hours-overlay").innerHTML =
-            ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
-
-         document.getElementById("minutes-overlay").innerHTML =
-            ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
-
-         document.getElementById("seconds-overlay").innerHTML =
-            ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds</h6>";
-
-         document.getElementById("status").innerHTML = "coming soon";
-         document.getElementById("status-overlay").innerHTML = "coming soon";
+         OldStatus = document.getElementsByClassName("status");
+         for (i = 0; i < OldStatus.length; i++) {
+            OldStatus[i].innerHTML = "coming soon";
+         }
 
       } else {
-         document.getElementById("status").innerHTML = "The countdown is over.";
-         document.getElementById("status-overlay").innerHTML = "The countdown is over.";
+         document.getElementsByClassName("status-overlay").innerHTML = "The countdown is over.";
       }
    }, 1000);
 }

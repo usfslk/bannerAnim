@@ -8,24 +8,17 @@ body {
    font-family: 'Rubik', sans-serif;
 }
 
+.master {
+   background-color: #f1f1f2;
+   width: 100%;
+   height: 100vh;
+   padding-top: 3%;
+}
+
 .flex {
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-.master {
-   background-color: #f1f2f3;
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-}
-
-.footer {
-   color: #fff;
-   background-color: #111;
-   padding: 1%
 }
 
 .logo {
@@ -39,7 +32,7 @@ body {
 }
 
 .time-label {
-   font-size: 14px;
+   font-size: 10px;
    font-weight: 300;
 }
 
@@ -56,7 +49,22 @@ body {
    overflow: hidden;
    width: 936px;
    height: 288px;
-   margin: 5%;
+   margin: 0 auto;
+}
+
+.banner-small {
+   background-color: #fff;
+   color: #cc0000;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+   width: 720px;
+   height: 288px;
+   margin: 0 auto;
+}
+
+.divider {
+   margin: 3%;
 }
 
 .banner-overlay {
@@ -67,10 +75,7 @@ body {
    right: 0;
    bottom: 0;
    left: 0;
-   overflow: hidden;
-   width: 100%;
-   clip-path: polygon(
-         var(--clip1) var(--clip2),
+   clip-path: polygon(var(--clip1) var(--clip2),
          var(--clip3) var(--clip4),
          var(--clip5) var(--clip6),
          var(--clip7) var(--clip8));
