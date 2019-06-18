@@ -1,3 +1,3 @@
-window.endDate = new Date("Jun 17, 2019 23:29:00").getTime();
-window.duration = 1000;
-window.easing = 'easeInOutQuint';
+window.endDate = new Date("Jun 17, 2020 23:34:00").getTime();
+window.duration = 1100;
+window.easing = 'easeOutExpo';

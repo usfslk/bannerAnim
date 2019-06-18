@@ -23,12 +23,31 @@ body {
 
 .logo {
    width: 298px;
-   height: 91px;
+   height: 79px;
 }
 
 .timestamp {
    font-size: 45px;
    font-weight: 700;
+   /* background-color: blue; */
+   width: 300px;
+   margin-top: 1%;
+}
+
+.days {
+   min-width: 90px;
+}
+
+.hours {
+  width: 70px;
+}
+
+.minutes {
+  width: 70px;
+}
+
+.seconds {
+  width: 70px;
 }
 
 .time-label {
@@ -79,4 +98,48 @@ body {
          var(--clip3) var(--clip4),
          var(--clip5) var(--clip6),
          var(--clip7) var(--clip8));
+   -webkit-clip-path: polygon(var(--clip1) var(--clip2),
+         var(--clip3) var(--clip4),
+         var(--clip5) var(--clip6),
+         var(--clip7) var(--clip8));
+}
+
+
+
+.test {
+   background-color: rgba(255, 255, 255, 0.25);
+   background-position: center;
+   border: 5px solid #000;
+   color: #333;
+   position: relative;
+   overflow: hidden;
+   width: 536px;
+   height: 288px;
+   margin: 0 auto;
+}
+
+.test-overlay {
+   background-image: url('https://images.unsplash.com/photo-1560441464-7d9c7e5e46dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');
+   color: rgba(255, 255, 255, 0.75);
+   background-position: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   clip-path: polygon(var(--clip1) var(--clip2),
+         var(--clip3) var(--clip4),
+         var(--clip5) var(--clip6),
+         var(--clip7) var(--clip8));
+   -webkit-clip-path: polygon(var(--clip1) var(--clip2),
+         var(--clip3) var(--clip4),
+         var(--clip5) var(--clip6),
+         var(--clip7) var(--clip8));
+}
+
+
+.testCol {
+   font-weight: 800;
+   font-size: 30px;
+   text-align: center
 }

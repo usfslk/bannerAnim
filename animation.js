@@ -3,7 +3,10 @@
 
 let banner = document.documentElement;
 
+toTop();
+
 function toTop() {
+   timerLoop();
    banner.style.setProperty('--clip1', 0);
    banner.style.setProperty('--clip2', '100%');
    banner.style.setProperty('--clip3', '100%');
@@ -27,6 +30,7 @@ function toTop() {
 }
 
 function toRight() {
+   timerLoop();
    nAnimate.start(duration, function (rate) {
       let position = 0 + (rate * 100);
       banner.style.setProperty('--clip1', Math.abs(position) + "%");
@@ -42,6 +46,7 @@ function toRight() {
 }
 
 function toBottom() {
+   timerLoop();
    banner.style.setProperty('--clip1', 0);
    banner.style.setProperty('--clip2', 0);
    banner.style.setProperty('--clip3', '100%');
@@ -65,6 +70,7 @@ function toBottom() {
 }
 
 function toLeft() {
+   timerLoop();
    nAnimate.start(duration, function (rate) {
       let position = -100 + (rate * 100);
       banner.style.setProperty('--clip3', Math.abs(position) + "%");
@@ -79,4 +85,43 @@ function toLeft() {
    }, easing);
 }
 
-toTop();
+
+// function testFunction() {
+//    banner.style.setProperty('--clip1', 0);
+//    banner.style.setProperty('--clip2', '100%');
+//    banner.style.setProperty('--clip3', '100%');
+//    banner.style.setProperty('--clip4', '100%');
+//    banner.style.setProperty('--clip5', '100%');
+//    banner.style.setProperty('--clip6', '100%');
+//    banner.style.setProperty('--clip7', 0);
+//    banner.style.setProperty('--clip8', '100%');
+//    nAnimate.start(duration, function (rate) {
+//       let position = -100 + (rate * 100);
+//       banner.style.setProperty('--clip6', Math.abs(position) + "%");
+//       banner.style.setProperty('--clip8', Math.abs(position) + "%");
+//       if (Math.abs(position) === 0) {
+//          let now = new Date().getTime();
+//          let t = endDate - now;
+//          if (t >= 0) {
+//             testFunctionReverse();
+//          }
+//       }
+//    }, easing);
+// }
+
+
+// function testFunctionReverse() {
+//    nAnimate.start(duration, function (rate) {
+//       let position = -100 + (rate * 100);
+//       // banner.style.setProperty('--clip1', Math.abs(position) + "%");
+//       banner.style.setProperty('--clip3', Math.abs(position) + "%");
+//       banner.style.setProperty('--clip5', Math.abs(position) + "%");
+//       if (Math.abs(position) === 0) {
+//          let now = new Date().getTime();
+//          let t = endDate - now;
+//          if (t >= 100) {
+//             testFunction();
+//          }
+//       }
+//    }, easing);
+// }

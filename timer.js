@@ -1,7 +1,8 @@
 // Youssef Selkani
 // 2019
 
-var timer = setInterval(function () {
+function timerLoop() {
+   console.log('launched')
    let now = new Date().getTime();
    let t = endDate - now;
    if (t >= 0) {
@@ -12,17 +13,17 @@ var timer = setInterval(function () {
 
       oldDays = document.getElementsByClassName("days");
       for (i = 0; i < oldDays.length; i++) {
-         oldDays[i].innerHTML = days + ":<br/><h6 class='time-label'>Days</h6>";
+         oldDays[i].innerHTML = days + "<br/><h6 class='time-label'>Days</h6>";
       }
 
       oldHours = document.getElementsByClassName("hours");
       for (i = 0; i < oldHours.length; i++) {
-         oldHours[i].innerHTML = ("0" + hours).slice(-2) + ":<br/><h6 class='time-label'>Hours </h6>";
+         oldHours[i].innerHTML = ("0" + hours).slice(-2) + "<br/><h6 class='time-label'>Hours </h6>";
       }
 
       oldMinutes = document.getElementsByClassName("minutes");
       for (i = 0; i < oldMinutes.length; i++) {
-         oldMinutes[i].innerHTML = ("0" + mins).slice(-2) + ":<br/><h6 class='time-label'>Minutes </h6>";
+         oldMinutes[i].innerHTML = ("0" + mins).slice(-2) + "<br/><h6 class='time-label'>Minutes </h6>";
       }
 
       oldSeconds = document.getElementsByClassName("seconds");
@@ -35,10 +36,15 @@ var timer = setInterval(function () {
          OldStatus[i].innerHTML = "coming soon";
       }
 
+      OldDots = document.getElementsByClassName("dots");
+      for (i = 0; i < OldDots.length; i++) {
+         OldDots[i].innerHTML = ":";
+      }
+
    } else {
       OldStatus = document.getElementsByClassName("status");
       for (i = 0; i < OldStatus.length; i++) {
-         OldStatus[i].innerHTML = "The countdown is over.";
+         // OldStatus[i].innerHTML = "The countdown is over.";
       }
    }
-}, 1000);
+}
