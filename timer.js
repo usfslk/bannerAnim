@@ -44,7 +44,27 @@ function timerLoop() {
    } else {
       OldStatus = document.getElementsByClassName("status");
       for (i = 0; i < OldStatus.length; i++) {
-         // OldStatus[i].innerHTML = "The countdown is over.";
+         OldStatus[i].innerHTML = "The countdown is over.";
+      }
+      oldDays = document.getElementsByClassName("days");
+      for (i = 0; i < oldDays.length; i++) {
+         oldDays[i].innerHTML = '';
+      }
+      oldHours = document.getElementsByClassName("hours");
+      for (i = 0; i < oldHours.length; i++) {
+         oldHours[i].innerHTML = '';
+      }
+      oldMinutes = document.getElementsByClassName("minutes");
+      for (i = 0; i < oldMinutes.length; i++) {
+         oldMinutes[i].innerHTML = '';
+      }
+      oldSeconds = document.getElementsByClassName("seconds");
+      for (i = 0; i < oldSeconds.length; i++) {
+         oldSeconds[i].innerHTML = '';
+      }
+      OldDots = document.getElementsByClassName("dots");
+      for (i = 0; i < OldDots.length; i++) {
+         OldDots[i].innerHTML = '';
       }
    }
 }
