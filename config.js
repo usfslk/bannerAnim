@@ -1,3 +1,3 @@
-window.endDate = new Date("Jun 19, 2019 20:33:00").getTime();
+window.endDate = new Date("Sep 19, 2019 00:00:00").getTime();
 window.duration = 1000;
 window.easing = 'easeOutQuart';
