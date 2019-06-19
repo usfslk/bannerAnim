@@ -1,8 +1,8 @@
 // Youssef Selkani
 // 2019
 
-let now = new Date().getTime();
 function timerLoop() {
+   let now = new Date().getTime();
    let t = endDate - now;
    if (t >= 0) {
 
@@ -17,15 +17,15 @@ function timerLoop() {
       }
       oldHours = document.getElementsByClassName("hours");
       for (i = 0; i < oldHours.length; i++) {
-         oldHours[i].innerHTML = ("0" + hours).slice(-2) + "<br/><h6 class='time-label'>Hours </h6>";
+         oldHours[i].innerHTML = ("0" + hours).slice(-2) + "<br/><h6 class='time-label'>Hours</h6>";
       }
       oldMinutes = document.getElementsByClassName("minutes");
       for (i = 0; i < oldMinutes.length; i++) {
-         oldMinutes[i].innerHTML = ("0" + mins).slice(-2) + "<br/><h6 class='time-label'>Minutes </h6>";
+         oldMinutes[i].innerHTML = ("0" + mins).slice(-2) + "<br/><h6 class='time-label'>Minutes</h6>";
       }
       oldSeconds = document.getElementsByClassName("seconds");
       for (i = 0; i < oldSeconds.length; i++) {
-         oldSeconds[i].innerHTML = ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds </h6>";
+         oldSeconds[i].innerHTML = ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds</h6>";
       }
       OldStatus = document.getElementsByClassName("status");
       for (i = 0; i < OldStatus.length; i++) {

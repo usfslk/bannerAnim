@@ -9,10 +9,10 @@ body {
 }
 
 .master {
-   background-color: #f1f1f2;
+   background-color: #fff;
    width: 100%;
    height: 100vh;
-   padding-top: 3%;
+   padding: 3%;
 }
 
 .flex {
@@ -29,7 +29,7 @@ body {
 .timestamp {
    font-size: 45px;
    font-weight: 700;
-   /* background-color: blue; */
+   /* background-color: beige; */
    width: 300px;
    margin-top: 5%;
 }
@@ -39,19 +39,23 @@ body {
 }
 
 .days {
-   min-width: 80px;
+   min-width: 70px;
+   padding-right: 3%;
 }
 
 .hours {
   width: 70px;
+
 }
 
 .minutes {
   width: 70px;
+
 }
 
 .seconds {
   width: 70px;
+
 }
 
 .time-label {
@@ -69,10 +73,8 @@ body {
    color: #cc0000;
    text-align: center;
    position: relative;
-   overflow: hidden;
    width: 936px;
    height: 288px;
-   margin: 0 auto;
 }
 
 .banner-small {
@@ -80,10 +82,8 @@ body {
    color: #cc0000;
    text-align: center;
    position: relative;
-   overflow: hidden;
    width: 720px;
    height: 288px;
-   margin: 0 auto;
 }
 
 .banner-overlay {
@@ -102,4 +102,18 @@ body {
          var(--clip3) var(--clip4),
          var(--clip5) var(--clip6),
          var(--clip7) var(--clip8));
+}
+
+.crop-banner {
+   width: 935px; 
+   height: 288px; 
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.crop-banner-small {
+   width: 719px; 
+   height: 288px; 
+   overflow: hidden;
+   margin: 0 auto;
 }
