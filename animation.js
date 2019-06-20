@@ -21,11 +21,11 @@ function toTop() {
    banner.style.setProperty('--clip7', '100%');
    nAnimate.start(duration, function (rate) {
       let position = -100 + (rate * 100);
+      banner.style.setProperty('--clip6', Math.abs(position) + "%");
+      banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (Math.abs(position) < 50) {
          timerLoop();
       }
-      banner.style.setProperty('--clip6', Math.abs(position) + "%");
-      banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
          let now = new Date().getTime();
          let t = endDate - now;
@@ -41,11 +41,11 @@ function toTop() {
 function toRight() {
    nAnimate.start(duration, function (rate) {
       let position = 0 + (rate * 100);
+      banner.style.setProperty('--clip3', Math.abs(position) + "%");
+      banner.style.setProperty('--clip5', Math.abs(position) + "%");
       if (Math.abs(position) > 50) {
          timerLoop();
       }
-      banner.style.setProperty('--clip3', Math.abs(position) + "%");
-      banner.style.setProperty('--clip5', Math.abs(position) + "%");
       if (position === 100) {
          let now = new Date().getTime();
          let t = endDate - now;
@@ -67,11 +67,11 @@ function toBottom() {
    banner.style.setProperty('--clip7', '100%');
    nAnimate.start(duration, function (rate) {
       let position = 0 + (rate * 100);
+      banner.style.setProperty('--clip6', Math.abs(position) + "%");
+      banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (Math.abs(position) > 50) {
          timerLoop();
       }
-      banner.style.setProperty('--clip6', Math.abs(position) + "%");
-      banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (position === 100) {
          let now = new Date().getTime();
          let t = endDate - now;
@@ -87,11 +87,11 @@ function toBottom() {
 function toLeft() {
    nAnimate.start(duration, function (rate) {
       let position = -100 + (rate * 100);
+      banner.style.setProperty('--clip1', Math.abs(position) + "%");
+      banner.style.setProperty('--clip7', Math.abs(position) + "%");
       if (Math.abs(position) < 50) {
          timerLoop();
       }
-      banner.style.setProperty('--clip1', Math.abs(position) + "%");
-      banner.style.setProperty('--clip7', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
          let now = new Date().getTime();
          let t = endDate - now;
