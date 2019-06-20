@@ -1,6 +1,8 @@
 // Youssef Selkani
 // 2019
 
+let root = document.documentElement;
+
 function timerLoop() {
    let now = new Date().getTime();
    let t = endDate - now;
@@ -13,7 +15,9 @@ function timerLoop() {
 
       oldDays = document.getElementsByClassName("days");
       for (i = 0; i < oldDays.length; i++) {
-         oldDays[i].innerHTML = days + "<br/><h6 class='time-label'>Days</h6>";
+         if (days !== 0 ) {
+            oldDays[i].innerHTML = days + "<br/><h6 class='time-label'>Days</h6>";
+         }
       }
       oldHours = document.getElementsByClassName("hours");
       for (i = 0; i < oldHours.length; i++) {
@@ -34,6 +38,15 @@ function timerLoop() {
       OldDots = document.getElementsByClassName("dots");
       for (i = 0; i < OldDots.length; i++) {
          OldDots[i].innerHTML = ":";
+      }
+      OldDotsForDays = document.getElementsByClassName("dots-days");
+      for (i = 0; i < OldDotsForDays.length; i++) {
+         if (days !== 0 ) {
+            OldDotsForDays[i].innerHTML = ":";
+            root.style.setProperty('--visible', 'initial');
+         } else {
+            root.style.setProperty('--visible', 'none');
+         }
       }
    }
    else {
