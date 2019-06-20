@@ -20,8 +20,10 @@ function toTop() {
    banner.style.setProperty('--clip5', 0);
    banner.style.setProperty('--clip7', '100%');
    nAnimate.start(duration, function (rate) {
-      timerLoop();
       let position = -100 + (rate * 100);
+      if (Math.abs(position) < 50) {
+         timerLoop();
+      }
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
@@ -38,8 +40,10 @@ function toTop() {
 
 function toRight() {
    nAnimate.start(duration, function (rate) {
-      timerLoop();
       let position = 0 + (rate * 100);
+      if (Math.abs(position) > 50) {
+         timerLoop();
+      }
       banner.style.setProperty('--clip3', Math.abs(position) + "%");
       banner.style.setProperty('--clip5', Math.abs(position) + "%");
       if (position === 100) {
@@ -62,8 +66,10 @@ function toBottom() {
    banner.style.setProperty('--clip5', 0);
    banner.style.setProperty('--clip7', '100%');
    nAnimate.start(duration, function (rate) {
-      timerLoop();
       let position = 0 + (rate * 100);
+      if (Math.abs(position) > 50) {
+         timerLoop();
+      }
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (position === 100) {
@@ -80,9 +86,10 @@ function toBottom() {
 
 function toLeft() {
    nAnimate.start(duration, function (rate) {
-      timerLoop();
       let position = -100 + (rate * 100);
-      console.log(position)
+      if (Math.abs(position) < 50) {
+         timerLoop();
+      }
       banner.style.setProperty('--clip1', Math.abs(position) + "%");
       banner.style.setProperty('--clip7', Math.abs(position) + "%");
       if (Math.abs(position) === 0) {
