@@ -24,7 +24,7 @@ function toTop() {
       console.log(Math.abs(position))
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
-      if (Math.abs(position) < 25) {
+      if (Math.abs(position) === 100) {
          timerLoop();
       }
       if (Math.abs(position) === 0) {
@@ -44,7 +44,7 @@ function toRight() {
       let position = 0 + (rate * 100);
       banner.style.setProperty('--clip3', Math.abs(position) + "%");
       banner.style.setProperty('--clip5', Math.abs(position) + "%");
-      if (Math.abs(position) > 25) {
+      if (Math.abs(position) === 0) {
          timerLoop();
       }
       if (position === 100) {
@@ -70,7 +70,7 @@ function toBottom() {
       let position = 0 + (rate * 100);
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
-      if (Math.abs(position) > 25) {
+      if (Math.abs(position) === 0) {
          timerLoop();
       }
       if (position === 100) {
@@ -90,7 +90,7 @@ function toLeft() {
       let position = -100 + (rate * 100);
       banner.style.setProperty('--clip1', Math.abs(position) + "%");
       banner.style.setProperty('--clip7', Math.abs(position) + "%");
-      if (Math.abs(position) < 25) {
+      if (Math.abs(position) === 100) {
          timerLoop();
       }
       if (Math.abs(position) === 0) {
