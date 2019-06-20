@@ -39,7 +39,7 @@ body {
 }
 
 .days {
-   width: 70px;
+   min-width: 70px;
    padding-right: 3%;
    display: var(--visible);
 }
@@ -59,6 +59,7 @@ body {
 .time-label {
    font-size: 10px;
    font-weight: 300;
+   text-align: center;
 }
 
 .coming-soon {
@@ -75,7 +76,7 @@ body {
    color: #cc0000;
    text-align: center;
    position: relative;
-   width: 936px;
+   width: 956px;
    height: 288px;
 }
 
@@ -107,7 +108,8 @@ body {
 }
 
 .crop-banner {
-   width: 934px; 
+   background-color: #111;
+   width: 936px; 
    height: 288px; 
    overflow: hidden;
    margin: 0 auto;
