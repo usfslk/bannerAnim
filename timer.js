@@ -7,15 +7,16 @@ function timerLoop() {
    let now = new Date().getTime();
    let t = endDate - now;
    if (t >= 0) {
-
       let days = Math.floor(t / (1000 * 60 * 60 * 24));
       let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
       let secs = Math.floor((t % (1000 * 60)) / 1000);
-
       oldDays = document.getElementsByClassName("days");
       for (i = 0; i < oldDays.length; i++) {
-         if (days !== 0 ) {
+         if (days < 10) {
+            oldDays[i].innerHTML = 
+               oldDays[i].innerHTML = ("0" + days).slice(-3) + "<br/><h6 class='time-label'>Days</h6>";
+         } else if (days > 10) {
             oldDays[i].innerHTML = days + "<br/><h6 class='time-label'>Days</h6>";
          }
       }
@@ -41,7 +42,7 @@ function timerLoop() {
       }
       OldDotsForDays = document.getElementsByClassName("dots-days");
       for (i = 0; i < OldDotsForDays.length; i++) {
-         if (days !== 0 ) {
+         if (days !== 0) {
             OldDotsForDays[i].innerHTML = ":";
             root.style.setProperty('--visible', 'initial');
          } else {

@@ -85,7 +85,7 @@ body {
    color: #cc0000;
    text-align: center;
    position: relative;
-   width: 720px;
+   width: 730px;
    height: 288px;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .crop-banner-small {
-   width: 719px; 
+   width: 720px; 
    height: 288px; 
    overflow: hidden;
    margin: 0 auto;
