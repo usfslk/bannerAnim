@@ -4,32 +4,42 @@
 <!DOCTYPE html>
 <html>
 
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>CVS Banner</title>
-      <link rel="stylesheet" href="styles.css" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
-      <script src="https://nanimation.js.org/nAnimation.1.0.js"></script>
-      <script src="https://code.jquery.com/jquery-3.4.1.js"
-         integrity="sha146-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      </link>
-      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-         crossorigin="anonymous"></script> -->
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>CVS Banner</title>
+   <link rel="stylesheet" href="styles.css" type="text/css">
+   <script src="nAnimation.js"></script>
+   <script src="jquery.js"></script>
+   <link rel="stylesheet" href='bootstrap.min.css' type="text/css">
+   </link>
+</head>
 
-   <body>
-      <div class="master">
-         <div class="crop-banner">
-            <div class="banner flex">
+<body>
+   <div class="master">
+      <div class="crop-banner">
+         <div class="banner flex">
+            <div>
+               <img class="logo" src='assets/redLogo.png' />
+               <div class="container flex timestamp">
+                  <div class="row" id='timer'>
+                     <div class="col-xs-2 days text-right"></div>
+                     <div class="col-xs-1 dots-days"></div>
+                     <div class="col-xs-2 hours"></div>
+                     <div class="col-xs-1 dots"></div>
+                     <div class="col-xs-2 minutes"></div>
+                     <div class="col-xs-1 dots"></div>
+                     <div class="col-xs-2 seconds"></div>
+                  </div>
+               </div>
+               <p class="coming-soon status"></p>
+            </div>
+            <div class="banner-overlay flex">
                <div>
-                  <img class="logo" src='assets/redLogo.png' />
+                  <img class="logo" src='assets/whiteLogo.png' />
                   <div class="container flex timestamp">
-                     <div class="row" id='timer'>
+                     <div class="row" id='timer-overlay'>
                         <div class="col-xs-2 days text-right"></div>
                         <div class="col-xs-1 dots-days"></div>
                         <div class="col-xs-2 hours"></div>
@@ -41,27 +51,11 @@
                   </div>
                   <p class="coming-soon status"></p>
                </div>
-               <div class="banner-overlay flex">
-                  <div>
-                     <img class="logo" src='assets/whiteLogo.png' />
-                     <div class="container flex timestamp">
-                        <div class="row" id='timer-overlay'>
-                           <div class="col-xs-2 days text-right"></div>
-                           <div class="col-xs-1 dots-days"></div>
-                           <div class="col-xs-2 hours"></div>
-                           <div class="col-xs-1 dots"></div>
-                           <div class="col-xs-2 minutes"></div>
-                           <div class="col-xs-1 dots"></div>
-                           <div class="col-xs-2 seconds"></div>
-                        </div>
-                     </div>
-                     <p class="coming-soon status"></p>
-                  </div>
-               </div>
             </div>
          </div>
-         <div class="divider" />
-         <div class="crop-banner-small">
+      </div>
+   </div>
+   <!-- <div class="crop-banner-small">
             <div class="banner-small flex">
                <div>
                   <img class="logo" src='assets/redLogo.png' />
@@ -96,11 +90,11 @@
                   </div>
                </div>
             </div>
-         </div>
-      </div>
-      <script src="config.js"></script>
-      <script src="timer.js"></script>
-      <script src="animation.js"></script>
-   </body>
+         </div> -->
+
+   <script src="config.js"></script>
+   <script src="timer.js"></script>
+   <script src="animation.js"></script>
+</body>
 
 </html>

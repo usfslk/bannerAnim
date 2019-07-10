@@ -3,16 +3,10 @@ Youssef Selkani
 2019
 */
 
-html,
-body {
-   font-family: 'Rubik', sans-serif;
-}
-
 .master {
-   background-color: #fff;
+   background-color: #fafafa;
    width: 100%;
    height: 100vh;
-   padding: 3%;
 }
 
 .flex {
@@ -112,12 +106,11 @@ body {
    width: 936px; 
    height: 288px; 
    overflow: hidden;
-   margin: 0 auto;
 }
 
 .crop-banner-small {
    width: 720px; 
    height: 288px; 
    overflow: hidden;
-   margin: 0 auto;
+
 }
