@@ -16,12 +16,12 @@ Youssef Selkani
 }
 
 .logo {
-   width: 298px;
-   height: 79px;
+   width: 120px;
+   padding-bottom: 1vh
 }
 
 .timestamp {
-   font-size: 45px;
+   font-size: 55px;
    font-weight: 700;
    width: 300px;
    margin-top: 5%;
@@ -39,15 +39,15 @@ Youssef Selkani
 }
 
 .hours {
-  width: 70px;
+   width: 70px;
 }
 
 .minutes {
-  width: 70px;
+   width: 70px;
 }
 
 .seconds {
-  width: 70px;
+   width: 70px;
 }
 
 .time-label {
@@ -58,6 +58,7 @@ Youssef Selkani
 
 .coming-soon {
    font-weight: 700;
+   font-size: 20px;
    margin-top: 1%;
 }
 
@@ -91,26 +92,19 @@ Youssef Selkani
    right: 0;
    bottom: 0;
    left: 0;
-   clip-path: polygon(var(--clip1) var(--clip2),
-         var(--clip3) var(--clip4),
-         var(--clip5) var(--clip6),
-         var(--clip7) var(--clip8));
-   -webkit-clip-path: polygon(var(--clip1) var(--clip2),
-         var(--clip3) var(--clip4),
-         var(--clip5) var(--clip6),
-         var(--clip7) var(--clip8));
+   clip-path: polygon(var(--clip1) var(--clip2), var(--clip3) var(--clip4), var(--clip5) var(--clip6), var(--clip7) var(--clip8));
+   -webkit-clip-path: polygon(var(--clip1) var(--clip2), var(--clip3) var(--clip4), var(--clip5) var(--clip6), var(--clip7) var(--clip8));
 }
 
 .crop-banner {
    background-color: #111;
-   width: 936px; 
-   height: 288px; 
+   width: 936px;
+   height: 288px;
    overflow: hidden;
 }
 
 .crop-banner-small {
-   width: 720px; 
-   height: 288px; 
+   width: 720px;
+   height: 288px;
    overflow: hidden;
-
 }
