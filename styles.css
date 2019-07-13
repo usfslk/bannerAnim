@@ -27,23 +27,28 @@ Youssef Selkani
    margin-top: 0px;
    margin-bottom: 2.5%;
    min-width: 500px;
-   /* background-color: yellowgreen */
 }
 
 .divider {
    margin: 3%;
 }
 
+.days {
+  width: 90px;
+   display: var(--visible);
+   text-align: center;
+}
+
 .hours {
-   min-width: 70px;
+  width: 90px;
 }
 
 .minutes {
-   min-width: 70px;
+  width: 90px;
 }
 
 .seconds {
-   min-width: 70px;
+  width: 90px;
 }
 
 .time-label {
@@ -51,13 +56,11 @@ Youssef Selkani
    font-weight: 300;
    text-align: center;
    margin-top: -15px;
-
 }
 
 .coming-soon {
    font-weight: 700;
    font-size: 20px;
-   /* margin-top: -5px; */
    margin-bottom: -20px;
 }
 
@@ -65,20 +68,13 @@ Youssef Selkani
    display: var(--visible);
    padding-right: 1%;
    padding-left: 1%;
-   /* background-color: blue */
-
+   /* background-color: black; */
 }
 
 .dots {
    padding-right: 1%;
-   padding-left: 1%;
-   /* background-color: blue */
-}
-
-.days {
-   min-width: 70px;
-  
-   display: var(--visible);
+   padding-left: 2%;
+   /* background-color: black; */
 }
 
 .banner {
