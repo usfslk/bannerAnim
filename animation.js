@@ -5,9 +5,11 @@ let banner = document.documentElement;
 let now = new Date().getTime();
 let t = endDate - now;
 
+console.log('anim')
 // Check timer
 if (t >= 0) {
    toTop();
+
 } else {
    timerLoop();
 }
@@ -21,7 +23,7 @@ function toTop() {
    banner.style.setProperty('--clip7', '100%');
    nAnimate.start(duration, function (rate) {
       let position = -100 + (rate * 100);
-      console.log(Math.abs(position))
+      // console.log(Math.abs(position))
       banner.style.setProperty('--clip6', Math.abs(position) + "%");
       banner.style.setProperty('--clip8', Math.abs(position) + "%");
       if (Math.abs(position) === 100) {

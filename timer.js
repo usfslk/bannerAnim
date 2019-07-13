@@ -32,18 +32,18 @@ function timerLoop() {
       for (i = 0; i < oldSeconds.length; i++) {
          oldSeconds[i].innerHTML = ("0" + secs).slice(-2) + "<br/><h6 class='time-label'>Seconds</h6>";
       }
-      OldStatus = document.getElementsByClassName("status");
-      for (i = 0; i < OldStatus.length; i++) {
-         OldStatus[i].innerHTML = "coming soon";
+      oldStatus = document.getElementsByClassName("status");
+      for (i = 0; i < oldStatus.length; i++) {
+         oldStatus[i].innerHTML = "coming soon";
       }
-      OldDots = document.getElementsByClassName("dots");
-      for (i = 0; i < OldDots.length; i++) {
-         OldDots[i].innerHTML = ":";
+      oldDots = document.getElementsByClassName("dots");
+      for (i = 0; i < oldDots.length; i++) {
+         oldDots[i].innerHTML = ":";
       }
-      OldDotsForDays = document.getElementsByClassName("dots-days");
-      for (i = 0; i < OldDotsForDays.length; i++) {
+      oldDotsForDays = document.getElementsByClassName("dots-days");
+      for (i = 0; i < oldDotsForDays.length; i++) {
          if (days !== 0) {
-            OldDotsForDays[i].innerHTML = ":";
+            oldDotsForDays[i].innerHTML = ":";
             root.style.setProperty('--visible', 'initial');
          } else {
             root.style.setProperty('--visible', 'none');
@@ -51,9 +51,9 @@ function timerLoop() {
       }
    }
    else {
-      OldStatus = document.getElementsByClassName("status");
-      for (i = 0; i < OldStatus.length; i++) {
-         OldStatus[i].innerHTML = "The countdown is over.";
+      oldStatus = document.getElementsByClassName("status");
+      for (i = 0; i < oldStatus.length; i++) {
+         oldStatus[i].innerHTML = "The countdown is over.";
       }
       oldDays = document.getElementsByClassName("days");
       for (i = 0; i < oldDays.length; i++) {
@@ -71,9 +71,9 @@ function timerLoop() {
       for (i = 0; i < oldSeconds.length; i++) {
          oldSeconds[i].innerHTML = '';
       }
-      OldDots = document.getElementsByClassName("dots");
-      for (i = 0; i < OldDots.length; i++) {
-         OldDots[i].innerHTML = '';
+      oldDots = document.getElementsByClassName("dots");
+      for (i = 0; i < oldDots.length; i++) {
+         oldDots[i].innerHTML = '';
       }
    }
 }

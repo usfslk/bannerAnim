@@ -16,53 +16,68 @@ Youssef Selkani
 }
 
 .logo {
-   width: 120px;
+   width: 140px;
    padding-bottom: 1vh
 }
 
 .timestamp {
-   font-size: 55px;
+   font-size: 75px;
    font-weight: 700;
    width: 300px;
-   margin-top: 5%;
+   margin-top: 0px;
    margin-bottom: 2.5%;
+   min-width: 500px;
+   /* background-color: yellowgreen */
 }
 
 .divider {
    margin: 3%;
 }
 
-.days {
-   min-width: 70px;
-   padding-right: 3%;
-   display: var(--visible);
-}
-
 .hours {
-   width: 70px;
+   min-width: 70px;
 }
 
 .minutes {
-   width: 70px;
+   min-width: 70px;
 }
 
 .seconds {
-   width: 70px;
+   min-width: 70px;
 }
 
 .time-label {
-   font-size: 10px;
+   font-size: 15px;
    font-weight: 300;
    text-align: center;
+   margin-top: -15px;
+
 }
 
 .coming-soon {
    font-weight: 700;
    font-size: 20px;
-   margin-top: 1%;
+   /* margin-top: -5px; */
+   margin-bottom: -20px;
 }
 
 .dots-days {
+   display: var(--visible);
+   padding-right: 1%;
+   padding-left: 1%;
+   /* background-color: blue */
+
+}
+
+.dots {
+   padding-right: 1%;
+   padding-left: 1%;
+   /* background-color: blue */
+}
+
+.days {
+   min-width: 70px;
+  
    display: var(--visible);
 }
 
