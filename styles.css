@@ -34,7 +34,7 @@ Youssef Selkani
 }
 
 .days {
-  width: 90px;
+  min-width: 90px;
    display: var(--visible);
    text-align: center;
 }
